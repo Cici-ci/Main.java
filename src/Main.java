@@ -21,6 +21,8 @@ public class Main {
         for (short month =1; month<=years*MONTHS_IN_YEAR;month++){
             double balance = calculateBalance(principal,annualInterest,years,month);
             System.out.println(NumberFormat.getCurrencyInstance().format(balance));
+            System.out.println("---");
+
         }
     }
         static double readNumber (String prompt,double min, double max){
